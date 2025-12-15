@@ -5,6 +5,7 @@ const NextConfig = {
   images: {
     unoptimized: true,
   },
+  transpilePackages: ['three']
 };
 
 const withNextIntl = createNextIntlPlugin();
