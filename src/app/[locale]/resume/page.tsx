@@ -6,6 +6,7 @@ import SkillsSection from "./components/skills-section";
 import EducationSection from "./components/education-section";
 import CertificationsSection from "./components/certifications-section";
 import ProjectsSection from "./components/projects-section";
+import WorkExperienceSection from "./components/work-experience-section";
 
 const Resume = () => {
   const data = getResumeData();
@@ -28,7 +29,7 @@ const Resume = () => {
           <EducationSection data={data.education} />
           {data?.certification && <CertificationsSection data={data?.certification} />}
           <div className="md:col-span-2 space-y-8">
-            {/* {data.workExperience && <WorkExperienceSection data={data.workExperience}/>} */}
+            {data.workExperience && <WorkExperienceSection data={data.workExperience}/>}
             <ProjectsSection data={data.projects}/>
           </div>
         </div>
