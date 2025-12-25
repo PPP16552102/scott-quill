@@ -3,6 +3,7 @@ import Header from "./components/header";
 import { getResumeData } from "@/lib/resume-parser";
 import ProfileSection from "./components/profile-section";
 import SkillsSection from "./components/skills-section";
+import EducationSection from "./components/education-section";
 
 const Resume = () => {
   const data = getResumeData();
@@ -22,6 +23,7 @@ const Resume = () => {
         <div className="md:col-span-1 space-y-8">
           <ProfileSection data={data.profile} />
           <SkillsSection data={data.skills} />
+          <EducationSection data={data.education} />
         </div>
       </Card>
     </div>
