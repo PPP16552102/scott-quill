@@ -9,7 +9,7 @@ interface TextRevealEffectProps {
   once?: boolean;
   delay?: number;
   duration?: number;
-  as?: React.ElementType;
+  as?: any;
 }
 
 const TextRevealEffect = ({
