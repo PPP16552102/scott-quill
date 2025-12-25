@@ -1,6 +1,4 @@
 import { clsx, type ClassValue } from "clsx";
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
 import { twMerge } from "tailwind-merge";
 
 export const cn = (...inputs: ClassValue[]) => {
@@ -21,9 +19,3 @@ export const getSizeClass = (size: string) => {
       return "w-24 h-24 text-sm";
   }
 };
-
-export const getResumeData = () => { 
-  const filePath = join(process.cwd(), '/docs/resume-data.md');
-  const fileContents = readFileSync(filePath, 'utf-8');
-
-}
