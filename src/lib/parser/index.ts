@@ -1,4 +1,4 @@
-function matter(input?: string | { content: string }, options: any) {
+function matter(input?: string | { content: string }) {
   if (input === '') return {
     data: {},
     content: input,
