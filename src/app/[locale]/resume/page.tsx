@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import Header from "./components/header";
 import { getResumeData } from "@/lib/resume-parser";
 import ProfileSection from "./components/profile-section";
+import SkillsSection from "./components/skills-section";
 
 const Resume = () => {
   const data = getResumeData();
@@ -20,6 +21,7 @@ const Resume = () => {
         <Header data={data.personalInfo} />
         <div className="md:col-span-1 space-y-8">
           <ProfileSection data={data.profile} />
+          <SkillsSection data={data.skills} />
         </div>
       </Card>
     </div>
