@@ -31,7 +31,8 @@
     "react-dom": "catalog:",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7",
-    "three": "^0.182.0"
+    "three": "^0.182.0",
+    "zustand": "catalog:"
   },
   "devDependencies": {
     "@types/node": "catalog:",
