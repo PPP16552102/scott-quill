@@ -1,6 +1,13 @@
 import { Card } from "@/components/ui/card";
 import Header from "./components/header";
 import { getResumeData } from "@/lib/resume-parser";
+import ProfileSection from "./components/profile-section";
+import SkillsSection from "./components/skills-section";
+import EducationSection from "./components/education-section";
+import CertificationsSection from "./components/certifications-section";
+import ProjectsSection from "./components/projects-section";
+import WorkExperienceSection from "./components/work-experience-section";
+import Footer from "./components/footer";
 
 const Resume = () => {
   const data = getResumeData();
@@ -13,7 +20,18 @@ const Resume = () => {
         <div className="absolute bottom-[-15%] left-[20%] w-[60%] h-[60%] rounded-full bg-linear-to-t from-pink-200/30 to-blue-200/30 blur-3xl"/>
       </div>
       <Card className="max-w-4xl mx-auto p-6 md:p-8 shadow-md border border-gray-200 bg-white/90 backdrop-blur-sm relative z-10">
-        <Header data={data.personalInfo}/>
+        <Header data={data.personalInfo} />
+        <div className="md:col-span-1 space-y-8">
+          <ProfileSection data={data.profile} />
+          <SkillsSection data={data.skills} />
+          <EducationSection data={data.education} />
+          {data?.certification && <CertificationsSection data={data?.certification} />}
+          <div className="md:col-span-2 space-y-8">
+            {data.workExperience && <WorkExperienceSection data={data.workExperience}/>}
+            <ProjectsSection data={data.projects}/>
+          </div>
+        </div>
+        <Footer data={data.footer}/>
       </Card>
     </div>
   )
