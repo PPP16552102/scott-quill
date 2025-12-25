@@ -7,12 +7,10 @@ import EducationSection from "./components/education-section";
 import CertificationsSection from "./components/certifications-section";
 import ProjectsSection from "./components/projects-section";
 import WorkExperienceSection from "./components/work-experience-section";
+import Footer from "./components/footer";
 
 const Resume = () => {
   const data = getResumeData();
-
-  console.log('data -> ', data);
-  
 
   return (
     <div className="min-h-screen py-8 px-4 md:px-8 lg:px-12 bg-linear-to-br from-blue-50 via-purple-50 to-pink-50 relative overflow-hidden">
@@ -33,6 +31,7 @@ const Resume = () => {
             <ProjectsSection data={data.projects}/>
           </div>
         </div>
+        <Footer data={data.footer}/>
       </Card>
     </div>
   )
