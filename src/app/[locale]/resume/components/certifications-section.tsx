@@ -5,7 +5,7 @@ interface Props {
   data?: any
 }
 
-export const CertificationSection: React.FC<Props> = ({ data }) => { 
+export const CertificationsSection: React.FC<Props> = ({ data }) => { 
   return (
     <section>
       <div className="flex items-center gap-2 mb-3">
@@ -24,4 +24,4 @@ export const CertificationSection: React.FC<Props> = ({ data }) => {
   )
 }
 
-export default CertificationSection;
+export default CertificationsSection;

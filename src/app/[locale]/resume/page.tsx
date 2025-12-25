@@ -4,7 +4,8 @@ import { getResumeData } from "@/lib/resume-parser";
 import ProfileSection from "./components/profile-section";
 import SkillsSection from "./components/skills-section";
 import EducationSection from "./components/education-section";
-import CertificationSection from "./components/certifications-section";
+import CertificationsSection from "./components/certifications-section";
+import ProjectsSection from "./components/projects-section";
 
 const Resume = () => {
   const data = getResumeData();
@@ -25,7 +26,11 @@ const Resume = () => {
           <ProfileSection data={data.profile} />
           <SkillsSection data={data.skills} />
           <EducationSection data={data.education} />
-          { data?.certification && <CertificationSection data={data?.certification} /> }
+          {data?.certification && <CertificationsSection data={data?.certification} />}
+          <div className="md:col-span-2 space-y-8">
+            {/* {data.workExperience && <WorkExperienceSection data={data.workExperience}/>} */}
+            <ProjectsSection data={data.projects}/>
+          </div>
         </div>
       </Card>
     </div>
