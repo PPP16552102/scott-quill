@@ -5,6 +5,8 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import ThemeProvider from "@/components/theme-provider";
+import { CounterStoreProvider } from "@/providers/counter-store-provider";
+
 
 const RootLayout = async ({
   children,
@@ -35,7 +37,9 @@ const RootLayout = async ({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <CounterStoreProvider>
+              {children}
+            </CounterStoreProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

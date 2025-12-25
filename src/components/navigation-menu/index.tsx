@@ -57,6 +57,11 @@ const NavigationMenu = ({ scrolled }: NavigationMenuProps) => {
       href: "#blog",
       external: true,
     },
+    {
+      name: t('resume'),
+      href: '/zh/resume',
+      external: true
+    }
   ];
 
   const handleLinkClick = () => {

@@ -23,6 +23,7 @@ import { LampContainer } from "@/components/ui/lamp-container";
 import CardSection from "@/components/sections/card-section";
 import PersonalitySection from "@/components/sections/personality-section";
 import FinalSection from "@/components/sections/final-section";
+import PointSphere from "@/components/ui/point-sphere";
 
 const HomePage = () => {
   const t = useTranslations("HomePage");
@@ -111,6 +112,8 @@ const HomePage = () => {
         >
           <KeywordSection />
         </motion.div>
+
+        <PointSphere/>
 
         <AboutSection />
 
