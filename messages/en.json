@@ -1,15 +1,15 @@
 {
   "HomePage": {
-    "title": "grtsinry43",
-    "greeting": "grtsinry43",
+    "title": "Scopter",
+    "greeting": "Scopter",
     "moreToSee": "Want to see more?",
     "personalityAndInterests": "Below, let's continue to check out my personality and interests~",
-    "footerRights": "© {year} grtsinry43. All rights reserved.",
+    "footerRights": "© {year} Scopter. All rights reserved.",
     "srGitHub": "GitHub",
     "srEmail": "Email",
     "srBlog": "Blog",
-    "parallaxText1": "Full Stack • Java • JavaScript • Kotlin • TypeScript • React • Next.js • Spring Boot",
-    "parallaxText2": "Vue.js • Android • Jetpack Compose • WeChat Miniprogram • Arch Linux • Innovation • Exploration • Development"
+    "parallaxText1": "JavaScript • TypeScript • Rust • C/C++ • Golang",
+    "parallaxText2": "Vue • React • Next.js • Three.js • Uniapp • Taro • Electron • React Native • Node"
   },
   "FriendLinksSection": {
     "title": "Friend Links",

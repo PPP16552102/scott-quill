@@ -1,3 +1,4 @@
+import RubikCube from "@/components/advance/rubik-cube";
 import { Badge } from "@/components/ui/badge";
 import { icons } from "@/constants/client/icon";
 import Image from "next/image";
@@ -101,6 +102,7 @@ const Header: React.FC<Props> = ({ data }) => {
         <DetailItem label="求职意向" value={data.personalDetails.jobTarget}/>
         <DetailItem label="期望薪资" value={data.personalDetails.salary}/>
       </div>
+      <RubikCube/>
     </header>
   )
 }

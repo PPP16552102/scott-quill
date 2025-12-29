@@ -1,15 +1,15 @@
 {
   "HomePage": {
-    "title": "grtsinry43",
-    "greeting": "grtsinry43",
+    "title": "Scopter",
+    "greeting": "Scopter",
     "moreToSee": "要看更多？",
     "personalityAndInterests": "下面，继续看看我的个性和兴趣吧~",
-    "footerRights": "© {year} grtsinry43. 保留所有权利。",
+    "footerRights": "© {year} Scopter. 保留所有权利。",
     "srGitHub": "GitHub",
     "srEmail": "Email",
     "srBlog": "博客",
-    "parallaxText1": "全栈 • Java • JavaScript • Kotlin • TypeScript • React • Next.js • Spring Boot",
-    "parallaxText2": "Vue.js • Android • Jetpack Compose • 微信小程序 • Arch Linux • 创新 • 探索 • 开发"
+    "parallaxText1": "JavaScript • TypeScript • Rust • C/C++ • Golang",
+    "parallaxText2": "Vue • React • Next.js • Three.js • Uniapp • Taro • Electron • React Native • Node"
   },
   "FriendLinksSection": {
     "title": "友情链接",

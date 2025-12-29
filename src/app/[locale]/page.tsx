@@ -9,7 +9,7 @@ import {
   useMotionValue,
   useSpring,
 } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useState } from "react";
 import NavigationMenu from "@/components/navigation-menu";
 import CreativeCanvas from "@/components/creative-canvas";
@@ -26,6 +26,7 @@ import FinalSection from "@/components/sections/final-section";
 import PointSphere from "@/components/ui/point-sphere";
 
 const HomePage = () => {
+  const locale = useLocale();  
   const t = useTranslations("HomePage");
   const { scrollYProgress } = useScroll();
   const scaleX = useTransform(scrollYProgress, [0, 1], [0, 1]);
@@ -43,14 +44,9 @@ const HomePage = () => {
   const [scrolled, setScrolled] = useState(false);
 
   return (
-    <div className="">
+    <div>
       <motion.div
-        className=" fixed top-0 left-0 right-0 h-px bg-[#333333] z-60 origin-left"
-        style={{ scaleX }}
-      />
-
-      <motion.div
-        className=" fixed inset-0 z-50 flex items-center justify-center bg-background"
+        className="fixed inset-0 z-50 flex items-center justify-center bg-background"
         initial={{ opacity: 1 }}
         animate={{ opacity: 0, pointerEvents: "none" }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -84,7 +80,7 @@ const HomePage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/public" className="text-xl font-bold tracking-tight">
+            <Link href={`/${locale}`} className="text-xl font-bold tracking-tight">
               {t("title")}
             </Link>
           </motion.div>
